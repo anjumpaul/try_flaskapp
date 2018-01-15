@@ -13,5 +13,5 @@ def login():
 def profile():
     user_name = request.form['user_name']
     password = request.form['password']
-    print(user_name,password)
+    print(user_name)
     return render_template('profile.html', user_name=user_name,password=password)
