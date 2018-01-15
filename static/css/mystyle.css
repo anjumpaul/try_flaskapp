@@ -1,0 +1,14 @@
+body {
+    background-color: white;
+    background-image: url("giphy.gif");
+}
+
+h1 {
+    color: yellow;
+    margin-left: 20px;
+
+}
+ div {
+   border-left:5px dotted red;
+
+ }

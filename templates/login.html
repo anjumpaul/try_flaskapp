@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+    function fun() {
+      console.log(document.getElementById("user_name").value);
+     document.getElementById("demo").innerHTML =
+  "entered name is " + document.getElementById("user_name").value;
+    }
+
+</script>
+  </head>
+  <body>
+    <!-- <p>jdeherbhjsfhyerbj</p> -->
+    <a href="{{url_for('profile')}}">home</a>
+    <form action="{{url_for('profile')}}" method="post">
+      <input type="text" id="user_name" name="user_name" placeholder="enter name" required>
+      <input type="password" name="password" placeholder="password" required><br><br>
+      <input type="submit" name="" value="submit">
+    </form>
+    <button type="button" name="button" onclick="fun()">idii</button>
+    <p id="demo"></p>
+
+  </body>
+</html>
